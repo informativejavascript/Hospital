@@ -16,7 +16,7 @@ public class MainScreen extends JFrame {
 	 * Create the frame.
 	 */
 	public MainScreen() {
-			
+		
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -26,26 +26,30 @@ public class MainScreen extends JFrame {
 		JButton doctorbutton = new JButton("Doctor");
 		doctorbutton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new TabClass();
+				CloseFrame();	
+				TabClass tc=new TabClass(1);
+			}
+
+			private void CloseFrame() {
+				// TODO Auto-generated method stub
+				setVisible(false);
 			}
 		});
 		doctorbutton.setBounds(127, 41, 110, 23);
-		
+		contentPane.add(doctorbutton);
 		
 		JButton receptionistbutton = new JButton("Patients");
 		receptionistbutton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			
+				setVisible(false);
+				new PatientsDetails();
 			}
 		});
-		
-		
-		contentPane.add(doctorbutton);
 		receptionistbutton.setBounds(127, 123, 110, 23);
 		contentPane.add(receptionistbutton);
 		
 		setTitle("MainScreen");
-		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}
 }

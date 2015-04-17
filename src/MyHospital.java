@@ -4,6 +4,6 @@ public class MyHospital  {
 		/*
 		 * Main class
 		 */
-		new DataClass();
+		new DataClass(1);
 	}
 }

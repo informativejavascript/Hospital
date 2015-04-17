@@ -7,12 +7,4 @@ public class Receptionist extends Employee{
 		// TODO Auto-generated constructor stub
 	}
 
-	public void receptionistdetails(){
-		/*
-		 * 
-		 * here goes the Labtechniciandetails
-		 * 
-		 */
-	}
-
 }

@@ -8,7 +8,6 @@ import java.util.List;
 import javax.swing.JPanel;
 
 public class Doctor extends Employee {
-	ArrayList<Doctor> arraylist;
 	private int id;
 	
 	
@@ -16,7 +15,4 @@ public class Doctor extends Employee {
 		super(id, name, address,type);
 	}
 
-	   public ArrayList<Doctor> getdocList() {
-	       return arraylist;
-	   }
 }
