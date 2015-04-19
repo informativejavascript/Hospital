@@ -11,8 +11,8 @@ public class Doctor extends Employee {
 	private int id;
 	
 	
-	public Doctor(int id, String name, String address,String type) {
-		super(id, name, address,type);
+	public Doctor(int id, String name, String address,String email) {
+		super(id, name, address,email);
 	}
 
 }

@@ -23,7 +23,7 @@ public class MainScreen extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton doctorbutton = new JButton("Doctor");
+		JButton doctorbutton = new JButton("Employee");
 		doctorbutton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				CloseFrame();	
