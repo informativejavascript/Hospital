@@ -6,7 +6,6 @@ import hospital.person.Doctor;
 import hospital.person.Receptionist;
 
 public class DataClass {
-	private Doctor doc;
 	private ArrayList<Doctor> doclist;
 	private ArrayList<Receptionist> receplist;
 	private ArrayList<Assitant> assitantlist;
